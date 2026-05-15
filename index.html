@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiwanshu Chourasia | Frontend Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Shiwanshu Chourasia, a Frontend Developer and MERN Stack Enthusiast specializing in creating high-performance, responsive web applications.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SC<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <div class="toggle-track">
+                        <div class="toggle-thumb">
+                            <i data-lucide="sun" class="sun-icon"></i>
+                            <i data-lucide="moon" class="moon-icon"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="bg-gradient-mesh"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="reveal">Hi, I'm</h2>
+                    <h1 class="reveal">Shiwanshu Chourasia</h1>
+                    <h3 class="reveal">Frontend Developer | MERN Stack Enthusiast | Java Web Developer</h3>
+                    <p class="reveal">I transform complex problems into elegant, high-performance digital experiences.
+                        Specializing in modern web technologies and user-centric design.</p>
+                    <div class="hero-btns reveal">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="SHIWANSHU CHOURASIA latest resume.pdf" download="Shiwanshu_Chourasia_Resume.pdf"
+                            class="btn btn-secondary">Download Resume</a>
+                    </div>
+                    <div class="social-links reveal">
+                        <a href="https://github.com/Mrshiwanshu" target="_blank"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/shiwanshu-chourasia-865366294" target="_blank"><i
+                                data-lucide="linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shiwanshu7545@gmail.com"
+                            target="_blank"><i data-lucide="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-reveal">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="profile.jpeg" alt="Shiwanshu Chourasia" class="profile-img">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>My journey as a frontend developer began with a fascination for how code can create visual
+                            beauty and seamless user interactions. Over the years, I've honed my skills in the MERN
+                            stack and Java web development, always pushing the boundaries of what's possible on the web.
+                        </p>
+                        <p>I have a deep passion for UI/UX design, believing that a website should not only work
+                            perfectly but also feel intuitive and inspiring. My experience ranges from crafting
+                            responsive interfaces with React and Tailwind to building robust backend systems with JSP
+                            and Servlets.</p>
+                        <p>In my final year, I spearheaded the <strong>FireEye</strong> project, an integrated system
+                            for fire and gas detection using IoT technology, showcasing my ability to bridge the gap
+                            between hardware and software.</p>
+
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Frontend Development</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-line" data-progress="90%"><span></span></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>MERN Stack</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-line" data-progress="85%"><span></span></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span>Java/JSP</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-line" data-progress="80%"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-reveal">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React.js</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Java Servlets</span>
+                            <span>JSP</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3>Database</h3>
+                        <div class="skill-tags">
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3>Other</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>REST APIs</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-reveal">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-image">
+                            <div class="img-overlay"></div>
+                            <div class="placeholder-project">DeskSavvy</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>DeskSavvy</h3>
+                            <p>An end-to-end Office Management System featuring modules for admins and employees with a
+                                robust leave management system.</p>
+                            <div class="project-tags">
+                                <span>JSP</span>
+                                <span>Servlets</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-icon"><i data-lucide="external-link"></i></a>
+                                <a href="#" class="btn-icon"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-image">
+                            <div class="img-overlay"></div>
+                            <div class="placeholder-project">FireEye</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>FireEye</h3>
+                            <p>An Arduino/ESP32 based Fire & Gas Leakage detection system with real-time web dashboard
+                                integration.</p>
+                            <div class="project-tags">
+                                <span>IoT</span>
+                                <span>C++</span>
+                                <span>Web Dashboard</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-icon"><i data-lucide="external-link"></i></a>
+                                <a href="#" class="btn-icon"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-image">
+                            <div class="img-overlay"></div>
+                            <div class="placeholder-project">Notes Hub</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Notes Hub</h3>
+                            <p>A full-stack MERN application for managing personal notes with secure authentication and
+                                CRUD features.</p>
+                            <div class="project-tags">
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>React</span>
+                                <span>Node</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-icon"><i data-lucide="external-link"></i></a>
+                                <a href="#" class="btn-icon"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline section-reveal">
+            <div class="container">
+                <h2 class="section-title">My Journey</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">Early Beginnings</span>
+                            <h3>Learning Web Development</h3>
+                            <p>Started the journey with HTML, CSS, and basic JavaScript, building small static projects
+                                and exploring design foundations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">Core Development</span>
+                            <h3>Java Projects</h3>
+                            <p>Deep dived into Java, JSP, and Servlets to build enterprise-grade web applications like
+                                DeskSavvy.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">Modern Era</span>
+                            <h3>MERN Stack Mastery</h3>
+                            <p>Transitioned to modern JavaScript ecosystem, completing multiple full-stack projects
+                                using React, Node, and MongoDB.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">Present</span>
+                            <h3>Final Year Project</h3>
+                            <p>Successfully integrated IoT with web tech in the FireEye project, pushing the boundaries
+                                of detection systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section-reveal">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <p class="section-intro">Driven by a passion for continuous learning, I constantly upgrade my skill
+                    set with industry-standard certifications and professional training.</p>
+                <div class="certifications-grid">
+                    <!-- Certificate 1 -->
+                    <div class="cert_card glass-card">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-platform">Analyze Infotech</span>
+                            <h3>Java Web Development</h3>
+                            <p class="cert-date">Completed: 10 August 2024</p>
+                            <p class="cert-desc">Comprehensive training in Java-based web technologies, including
+                                Servlets, JSP, and enterprise architecture.</p>
+                            <div class="cert-footer">
+                                <span class="cert-id">Ref No: ai/24/247</span>
+                                <a href="java web developement.pdf" target="_blank" class="btn-cert">View Certificate <i
+                                        data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="cert_card glass-card">
+                        <div class="cert-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-platform">Analyze Infotech</span>
+                            <h3>Java Full Stack</h3>
+                            <p class="cert-date">Completed: 28 July 2025</p>
+                            <p class="cert-desc">Comprehensive mastery of full-stack development, covering Core Java,
+                                Spring Boot, Hibernate, MySQL, and modern frontend integration.</p>
+                            <div class="cert-footer">
+                                <span class="cert-id">Ref No: ai/25/243</span>
+                                <a href="java full stack.pdf" target="_blank" class="btn-cert">View Certificate <i
+                                        data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="cert_card glass-card">
+                        <div class="cert-icon">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-platform">Apna College</span>
+                            <h3>DSA with Java</h3>
+                            <p class="cert-desc">Mastery of Data Structures and Algorithms with Java, including complex
+                                problem-solving and algorithmic optimization.</p>
+                            <div class="cert-footer">
+                                <a href="DSA with java.pdf" target="_blank" class="btn-cert">View Certificate <i
+                                        data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-reveal">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of
+                            your vision.</p>
+                        <div class="contact-methods">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shiwanshu7545@gmail.com"
+                                target="_blank" class="method-item">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>shiwanshu7545@gmail.com</span>
+                                </div>
+                            </a>
+                            <div class="method-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Mrshiwanshu" target="_blank"><i data-lucide="github"></i></a>
+                            <a href="https://www.linkedin.com/in/shiwanshu-chourasia-865366294" target="_blank"><i
+                                    data-lucide="linkedin"></i></a>
+                            <a href="#"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/shiwanshu7545@gmail.com" method="POST" target="hidden_iframe"
+                        class="contact-form glass-card" id="contact-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="subject" placeholder="Subject (Optional)">
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i data-lucide="send"></i></button>
+                        <div id="form-status" class="form-status"></div>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shiwanshu Chourasia. Designed with ❤️ and Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
