@@ -11,7 +11,34 @@
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.about-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
+.about-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--glass-bg, rgba(255,255,255,0.05));
+    color: inherit;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-social-links a:hover {
+    transform: translateY(-3px);
+    color: var(--accent-color, #6c63ff);
+}
+
+.about-social-links i {
+    width: 20px;
+    height: 20px;
+}
 .dark-theme {
     --bg-color: #0f172a;
     --text-color: #f8fafc;
