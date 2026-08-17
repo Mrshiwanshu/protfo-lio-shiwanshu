@@ -1,3 +1,39 @@
+.about-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.social-icon.linkedin {
+    background: #0A66C2;
+}
+
+.social-icon.instagram {
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
 :root {
     --primary-color: #3b82f6;
     --secondary-color: #8b5cf6;
@@ -11,34 +47,7 @@
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
 
-.about-social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: var(--glass-bg, rgba(255,255,255,0.05));
-    color: inherit;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.about-social-links a:hover {
-    transform: translateY(-3px);
-    color: var(--accent-color, #6c63ff);
-}
-
-.about-social-links i {
-    width: 20px;
-    height: 20px;
-}
 .dark-theme {
     --bg-color: #0f172a;
     --text-color: #f8fafc;
