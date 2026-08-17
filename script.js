@@ -101,36 +101,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Form Submission (Local-File Friendly "No Redirect") ---
     const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    const hiddenIframe = document.getElementById('hidden_iframe');
+const formStatus = document.getElementById('form-status');
 
-    if (contactForm && hiddenIframe) {
-        contactForm.addEventListener('submit', () => {
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerHTML;
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = contactForm.querySelector('button');
+        const originalText = btn.innerHTML;
 
-            // Show sending state
-            btn.innerHTML = 'Sending...';
-            btn.disabled = true;
+        btn.innerHTML = 'Sending...';
+        btn.disabled = true;
 
-            // This triggers once the hidden iframe finishes loading (after submission)
-            hiddenIframe.onload = () => {
-                btn.innerHTML = 'Sent! <i data-lucide="check"></i>';
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                formStatus.style.color = '#10b981';
+                formStatus.innerText = 'Thank you! Your message has been sent.';
                 contactForm.reset();
-                if (formStatus) {
-                    formStatus.style.color = '#10b981';
-                    formStatus.innerText = 'Thank you! Your message was sent without leaving this page.';
-                }
-                lucide.createIcons();
+            } else {
+                formStatus.style.color = '#ef4444';
+                formStatus.innerText = 'Oops! Something went wrong. Please try again.';
+            }
+        } catch (error) {
+            formStatus.style.color = '#ef4444';
+            formStatus.innerText = 'Network error. Please try again later.';
+        }
 
-                // Reset button after 4 seconds
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    lucide.createIcons();
-                    if (formStatus) formStatus.innerText = '';
-                }, 4000);
-            };
-        });
-    }
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+
+        setTimeout(() => { if (formStatus) formStatus.innerText = ''; }, 5000);
+    });
+}
 });
